@@ -1,3 +1,10 @@
 from pymongo import MongoClient
+from pathlib import Path
+from dotenv import load_dotenv
+import os
 
-dbClient = MongoClient("mongodb+srv://alessandrodaniele07:<password>13854518Gg*@parking.akdaebh.mongodb.net/test").parking
+env_path = Path(".") / ".env"
+load_dotenv(dotenv_path=env_path)
+
+dbClient = MongoClient(os.getenv("MONGO_URL")).Parking
+print(os.getenv("MONGO_URL"))
