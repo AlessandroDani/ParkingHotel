@@ -7,12 +7,12 @@ app = FastAPI()
 #Routers
 app.include_router(carsDB.router)
 
-carList = [
-    Car(id = "1", property= "Alessandro", brand = "Chevrolet", model = "Aveo", licensePlate = "AFE1INF"),
-    Car(id = "2", property= "Arnoldo", brand = "Mazda", model = "3", licensePlate = "ALORNEDC"),
-    Car(id = "3", property= "Umberto", brand = "Mercedes", model = "Benz", licensePlate = "KENCHDMA"),
-    Car(id = "4", property= "Alfonso", brand = "Honda", model = "x4", licensePlate = "PON54B"),
-    Car(id = "5", property= "Alberto", brand = "Ford", model = "Fiesta", licensePlate = "TUENSHF3")]
+carList = []
+    #Car(id = "1", property= "Alessandro", brand = "Chevrolet", model = "Aveo", licensePlate = "AFE1INF"),
+    #Car(id = "2", property= "Arnoldo", brand = "Mazda", model = "3", licensePlate = "ALORNEDC"),
+    #Car(id = "3", property= "Umberto", brand = "Mercedes", model = "Benz", licensePlate = "KENCHDMA"),
+    #Car(id = "4", property= "Alfonso", brand = "Honda", model = "x4", licensePlate = "PON54B"),
+    #Car(id = "5", property= "Alberto", brand = "Ford", model = "Fiesta", licensePlate = "TUENSHF3")]
 
 def searchCar(licensePlate: str):
     for carFound in carList:

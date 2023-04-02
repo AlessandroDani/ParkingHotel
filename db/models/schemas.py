@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 class Car(BaseModel):
     _id: Optional[str] 
-    property: str
+    owner: str
     brand: str
     model: str
     licensePlate: str
